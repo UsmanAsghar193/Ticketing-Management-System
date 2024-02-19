@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body{
+  /* Primary BG Color */
+  background-color: rgb(30, 41, 59); 
+  /* background-color: rgb(160, 190, 237); */
+  color: white;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+
+.ant-btn-cstm{
+  width: 100% !important ;
+  background-color: rgb(252, 211, 77) !important;
+  color: black !important;
+  font-weight: 700 !important; 
+  box-shadow: 0 10px 10px rgba(15, 23, 42, 0.5) !important ;   
+}
+
+.ant-btn-cstm:hover{
+  background-color: rgb(251, 191, 36) !important;
+  box-shadow: none !important;
+}

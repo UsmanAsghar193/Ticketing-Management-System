@@ -1,0 +1,19 @@
+i am using app routing in my next.js app
+in which i have created components like
+
+src/app/page.jsx => // http://localhost:3000/  => LandingPage
+src/app/(auth)/login/page.jsx => http://localhost:3000/login => LoginPage
+src/app/(auth)/register/page.jsx => // http://localhost:3000/register =>RegisterPage
+
+
+src/app/(panel)/admin/dashboard/page.jsx => // http://localhost:3000/admin/dashboard => Admin Dashboard
+src/app/(panel)/agent/dashboard/page.jsx => // http://localhost:3000/agent/dashboard => Agent Dashboard
+src/app/(panel)/client/dashboard/page.jsx => // http://localhost:3000/client/dashboard => Client Dashboard
+
+
+i have implemented login feature and it redirect respective to the role of the user
+but the problem is that if my client get login the client get redirected to it's client dashboard but the admin and agent dashboard are still accessible by client 
+which is not good the client should have access to it's client routes
+the agent should have access to it's agent routes
+the admin should have access to it's admin routes
+if the user is not authenticated only the loginPage, LandingPage and RegisterPage is accessbile
